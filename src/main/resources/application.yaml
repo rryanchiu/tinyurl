@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: tinyurl
+  profiles:
+    active: test
+  messages:
+    basename: i18n/messages
+    encoding: UTF-8
+    cache-duration: 3600
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+server:
+  port: 8765
