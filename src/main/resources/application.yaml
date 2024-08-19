@@ -7,6 +7,15 @@ spring:
     basename: i18n/messages
     encoding: UTF-8
     cache-duration: 3600
+  datasource:
+    hikari:
+      maximum-pool-size: 30
+      minimum-idle: 10
+      idle-timeout: 30000
+      login-timeout: 5
+      connection-timeout: 60000
+      max-lifetime: 70000
+      read-only: false
 
 springdoc:
   swagger-ui:

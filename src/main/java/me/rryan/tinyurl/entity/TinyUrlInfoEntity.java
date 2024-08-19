@@ -21,6 +21,7 @@ public class TinyUrlInfoEntity {
 
     private String code;
 
+    @Column(name = "long_url", length = 1000)
     private String longUrl;
 
     private String shortUrl;

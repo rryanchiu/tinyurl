@@ -19,6 +19,7 @@ import java.net.URI;
 @Tag(name = "TinyUrlController")
 @RestController
 @RequestMapping("/api/tinyurl")
+@CrossOrigin(origins = "*")
 public class TinyUrlController {
 
 
@@ -48,6 +49,9 @@ public class TinyUrlController {
             return ResponseEntity.notFound().build();
         }
 
+        if (!longUrl.startsWith("http")) {
+            longUrl = "http://" + longUrl;
+        }
         // 返回302重定向到长链接
         return ResponseEntity.status(HttpStatus.FOUND)
                 .location(URI.create(longUrl))
