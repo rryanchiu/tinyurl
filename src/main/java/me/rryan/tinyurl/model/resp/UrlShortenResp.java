@@ -2,9 +2,7 @@ package me.rryan.tinyurl.model.resp;
 
 
 import java.io.Serializable;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.Date;
 
 
 public class UrlShortenResp implements Serializable {

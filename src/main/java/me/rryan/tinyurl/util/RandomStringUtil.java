@@ -1,14 +1,6 @@
 package me.rryan.tinyurl.util;
 
-import org.springframework.util.StopWatch;
-
 import java.security.SecureRandom;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Random;
-import java.util.concurrent.ThreadLocalRandom;
-import java.util.concurrent.TimeUnit;
-import java.util.logging.Handler;
 
 public class RandomStringUtil {
 

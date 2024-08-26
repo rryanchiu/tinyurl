@@ -1,6 +1,5 @@
 package me.rryan.tinyurl.service.impl;
 
-import ch.qos.logback.core.testUtil.RandomUtil;
 import me.rryan.tinyurl.entity.TinyUrlInfoEntity;
 import me.rryan.tinyurl.exception.RandomCodeExistsException;
 import me.rryan.tinyurl.model.req.UrlShortenReq;
@@ -14,7 +13,6 @@ import org.springframework.retry.annotation.Backoff;
 import org.springframework.retry.annotation.Retryable;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Objects;
 

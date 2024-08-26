@@ -1,7 +1,6 @@
 package me.rryan.tinyurl.entity;
 
 import jakarta.persistence.*;
-import org.springframework.data.annotation.CreatedDate;
 
 import java.time.LocalDateTime;
 
