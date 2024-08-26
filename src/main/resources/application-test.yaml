@@ -25,5 +25,5 @@ spring:
 #      connection-timeout: 20000
 #      max-lifetime: 1800000
 tinyurl:
-  prefix: https://rryan.me/s/
+  prefix: https://s.rryan.me/
   expireSeconds: 604800
