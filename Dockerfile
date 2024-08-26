@@ -18,4 +18,4 @@ ENV REDIS_PASSWORD=${REDIS_PASSWORD}
 COPY target/tinyurl-0.0.1-SNAPSHOT.jar /app/tinyurl.jar
 
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "/app/tinyurl.jar", "--server.port=8080","-Xmx512m","-Xms512m"]
+ENTRYPOINT ["java", "-jar", "/app/tinyurl.jar", "--server.port=8080"]
