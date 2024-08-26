@@ -18,7 +18,7 @@ import java.net.URI;
 
 @Tag(name = "TinyUrlController")
 @RestController
-@RequestMapping("/api/tinyurl")
+@RequestMapping
 @CrossOrigin(origins = "*")
 public class TinyUrlController {
 
@@ -31,7 +31,7 @@ public class TinyUrlController {
     }
 
     @Operation(method = "POST", description = "Create Short Url")
-    @PostMapping("/shorten")
+    @PostMapping("/api/tinyurl/shorten")
     @IpLimit(key="shorten",value = 15)
     public ResponseResult<UrlShortenResp> createShortUrl(@RequestBody UrlShortenReq req) {
         UrlShortenResp resp = tinyUrlService.createSHortUrl(req);
